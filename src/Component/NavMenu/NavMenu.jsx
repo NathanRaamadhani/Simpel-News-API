@@ -26,8 +26,8 @@ const NavMenu = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Pages
+        <a href="/" className="flex items-center">
+          Home
         </a>
       </Typography>
       <Typography
@@ -36,8 +36,8 @@ const NavMenu = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Account
+        <a href="/about" className="flex items-center">
+          About
         </a>
       </Typography>
       <Typography
@@ -46,18 +46,8 @@ const NavMenu = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Blocks
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          Docs
+        <a href="/contact" className="flex items-center">
+          Contact
         </a>
       </Typography>
     </ul>
@@ -71,7 +61,7 @@ const NavMenu = () => {
             href="#"
             className="mr-4 cursor-pointer py-1.5 font-medium"
           >
-            The Breaking News
+            <strong className="text-2xl">The Breaking News</strong> 
           </Typography>
           <div className="hidden lg:block">{navList}</div>
           <Button variant="gradient" size="sm" className="hidden lg:inline-block">
